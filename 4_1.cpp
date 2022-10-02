@@ -22,11 +22,6 @@ void unionSet(ll x, ll y){
 
     if(x == y) return;
 
-//    для задачи 3_3 это бесполезно
-////    после этого if-а вес x будет больше чем у y
-//    if(w[x] < w[y])
-//        swap(x, y);
-
     w[x] += w[y];
     parent[y] = x;
 
